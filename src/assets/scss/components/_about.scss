@@ -1,0 +1,23 @@
+.about {
+    padding: 150px 30px 80px;
+    position: relative;
+
+    &__title {
+        @include adaptiv-font(16, 11);
+        line-height: 1.5em;
+        letter-spacing: 0.06em;
+        color: #22356F;
+        position: static;
+        top: 160px;
+        left: 100px;
+    }
+
+    &__text {
+        @include adaptiv-font(24, 14);
+        line-height: 1.5em;
+        letter-spacing: 0.005em;
+        color: #22356F;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

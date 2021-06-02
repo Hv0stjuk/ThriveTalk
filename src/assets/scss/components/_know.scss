@@ -1,0 +1,45 @@
+.know {
+    display: flex;
+    &__img-wrap {
+
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__intro {
+        padding-left: 105px;
+        max-width: 850px;
+    }
+
+    &__title {
+        margin: 150px 0 0;
+        @include adaptiv-font(16, 10);
+        line-height: 1.5em;
+        letter-spacing: 0.06em;
+        color: #22356F;
+    }
+
+    &__text {
+        margin-top: 225px;
+        @include adaptiv-font(36, 18);
+        line-height: 1.5em;
+        letter-spacing: -0.01em;
+        color: #22356F;
+    }
+
+    &__text-span {
+        color: #62D0DF;
+    }
+    
+    &__link {
+        margin-top: 150px;
+        @include adaptiv-font(16, 10);
+        line-height: 1.5em;
+        letter-spacing: 0.1em;
+        color: #FAB63E;
+    }
+}

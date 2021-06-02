@@ -1,0 +1,74 @@
+.help {
+    &__title {
+        @include adaptiv-font(16, 11);
+        line-height: 1.5em;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: rgba(34, 53, 111, 0.5);
+    }
+}
+
+.sports {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    &__item {
+        flex-grow: 1;
+        flex-basis: 25%;
+        min-height: 360px;
+        min-width: 360px;
+        
+    }
+
+    &__item:first-child {
+        background: #FFE2DE;
+    }
+
+    &__item:nth-child(2) {
+        background: #C4E769;
+    }
+
+    &__item:nth-child(3) {
+        background: #62D0DF;
+    }
+
+    &__item:last-child {
+        background: #0052C1;
+    }
+
+    &__title {
+        @include adaptiv-font(32, 18);
+        line-height: 1.5em;
+        letter-spacing: -0.006em;
+        color: #FFFFFF;
+        margin: 100px 0 0 80px;
+        position: relative;
+    }
+
+    &__title::before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 255px;
+        height: 1px;
+        background: white;
+        top: -20px;
+        left: -25px;
+    }
+
+    &__title::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background: #E9B730;
+        top: 12px;
+        left: -25px;
+}
+}
